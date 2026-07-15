@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Projects — Alex Rai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand">Alex Rai <span>/</span> Aerospace</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section style="padding-top:3rem">
+    <div class="wrap">
+      <p class="section-label">Selected projects</p>
+      <h1 style="font-size:2rem">Projects</h1>
+
+      <!-- Each project is one "card" — copy this whole <div class="card project-card">
+           block to add a new project. -->
+      <div class="grid-2" style="margin-top:2rem">
+
+        <div class="card project-card" style="padding:0">
+          <img src="images/project-uav-wing.svg" alt="Schematic of a UAV wing cross-section" />
+          <div class="card-body">
+            <h3 style="font-size:1.1rem">Low-Reynolds UAV Wing Optimization</h3>
+            <p style="color:var(--text-muted); font-size:0.92rem">
+              CFD sweep across airfoil camber and thickness for a fixed-wing UAV
+              operating below Re 500,000, reducing cruise drag by 11%.
+            </p>
+            <div class="tag-row">
+              <span class="tag">CFD</span>
+              <span class="tag">XFOIL</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card" style="padding:0">
+          <img src="images/project-propulsion.svg" alt="Schematic of a rocket engine combustion chamber" />
+          <div class="card-body">
+            <h3 style="font-size:1.1rem">Bi-Propellant Static Fire Test Stand</h3>
+            <p style="color:var(--text-muted); font-size:0.92rem">
+              Instrumentation and data reduction for a 500N test stand,
+              validating predicted specific impulse within 3%.
+            </p>
+            <div class="tag-row">
+              <span class="tag">MATLAB</span>
+              <span class="tag">DAQ</span>
+              <span class="tag">Propulsion</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card" style="padding:0">
+          <img src="images/project-satellite.svg" alt="Schematic of a satellite bus and solar arrays" />
+          <div class="card-body">
+            <h3 style="font-size:1.1rem">CubeSat Structural Qualification</h3>
+            <p style="color:var(--text-muted); font-size:0.92rem">
+              Vibration and thermal-vacuum test planning for a 3U CubeSat
+              structure, ahead of a university launch manifest.
+            </p>
+            <div class="tag-row">
+              <span class="tag">FEA</span>
+              <span class="tag">ANSYS</span>
+              <span class="tag">SolidWorks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card" style="padding:0">
+          <img src="images/project-windtunnel.svg" alt="Schematic of a wind tunnel test section" />
+          <div class="card-body">
+            <h3 style="font-size:1.1rem">Subsonic Wind Tunnel Instrumentation</h3>
+            <p style="color:var(--text-muted); font-size:0.92rem">
+              Built a load-cell and pressure-tap data pipeline for a university
+              subsonic tunnel, cutting test setup time in half.
+            </p>
+            <div class="tag-row">
+              <span class="tag">C++</span>
+              <span class="tag">Sensors</span>
+              <span class="tag">Testing</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 Alex Rai</span>
+      <span class="mono">alex.rai@example.com</span>
+    </div>
+  </footer>
+
+</body>
+</html>

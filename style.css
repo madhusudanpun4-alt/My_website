@@ -1,0 +1,317 @@
+/* =====================================================
+   DESIGN TOKENS
+   Change a value here and it updates EVERYWHERE it's used.
+   This is the entire reason we use variables instead of
+   typing the same color/font in a hundred places.
+   ===================================================== */
+:root {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --border: #dde3ea;
+  --border-strong: #c2ccd6;
+
+  --text: #16232e;
+  --text-muted: #5b6b7a;
+  --text-dim: #8a97a3;
+
+  --primary: #1d4e89;      /* blueprint blue - headings, links, nav */
+  --primary-dark: #123258;
+  --accent: #e4572e;       /* aerospace orange - buttons, highlights */
+  --accent-dark: #c8431d;
+
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --max-w: 1080px;
+  --radius: 6px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  /* subtle blueprint grid, this is the site's signature background */
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: -1px -1px;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  color: var(--primary-dark);
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+p { margin: 0 0 1em; }
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem; }
+
+.mono { font-family: var(--font-mono); }
+
+/* =====================================================
+   HEADER / NAVIGATION
+   The same header markup is copy-pasted at the top of
+   EVERY page. This is the main tradeoff of plain multi-page
+   HTML (a tool like Astro lets you write this once) - but
+   it's simple and totally fine for a site this size.
+   ===================================================== */
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+.brand span { color: var(--accent); }
+
+.site-nav {
+  display: flex;
+  gap: 1.75rem;
+}
+
+.site-nav a {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn:hover { text-decoration: none; }
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--accent-dark); }
+
+.btn-outline {
+  background: transparent;
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+.btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+
+/* =====================================================
+   HERO (homepage top section)
+   ===================================================== */
+.hero {
+  padding: 5rem 0 4rem;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+}
+
+.hero__tagline {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  max-width: 48ch;
+  margin-bottom: 2rem;
+}
+
+.hero__actions { display: flex; gap: 1rem; }
+
+.hero__portrait img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: block;
+}
+
+@media (max-width: 760px) {
+  .hero__grid { grid-template-columns: 1fr; }
+}
+
+/* =====================================================
+   SECTIONS / CARDS (reused across About, Projects, Skills)
+   ===================================================== */
+section { padding: 3.5rem 0; }
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.6rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.6rem;
+}
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+
+@media (max-width: 760px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* project card */
+.project-card img {
+  width: 100%;
+  border-radius: var(--radius) var(--radius) 0 0;
+  display: block;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-card .card-body { padding: 1.3rem; }
+
+.tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem; }
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  background: #eef2f6;
+  color: var(--primary-dark);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+}
+
+/* skills page */
+.skill-group h3 {
+  font-size: 1.05rem;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.skill-list { list-style: none; margin: 0; padding: 0; }
+.skill-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+.skill-list li:last-child { border-bottom: none; }
+.skill-level { color: var(--text-dim); font-family: var(--font-mono); font-size: 0.82rem; }
+
+/* timeline (about page) */
+.timeline { border-left: 2px solid var(--border); padding-left: 1.5rem; }
+.timeline-item { margin-bottom: 1.8rem; position: relative; }
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.61rem;
+  top: 0.3rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.timeline-date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+/* contact page */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+@media (max-width: 760px) { .contact-grid { grid-template-columns: 1fr; } }
+
+.form-field { margin-bottom: 1.1rem; }
+.form-field label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--text-muted);
+}
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  background: var(--surface);
+  color: var(--text);
+}
+.form-field textarea { resize: vertical; min-height: 120px; }
+
+.contact-list { list-style: none; margin: 0; padding: 0; }
+.contact-list li { display: flex; gap: 0.8rem; padding: 0.6rem 0; border-bottom: 1px solid var(--border); }
+.contact-list .label { width: 90px; color: var(--text-dim); font-family: var(--font-mono); font-size: 0.78rem; flex-shrink: 0; padding-top: 0.15rem; }
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+  margin-top: 3rem;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+.site-footer .wrap { display: flex; justify-content: space-between; }
+
+@media (max-width: 560px) {
+  .site-nav { gap: 1rem; font-size: 0.85rem; }
+  .site-footer .wrap { flex-direction: column; gap: 0.4rem; }
+}

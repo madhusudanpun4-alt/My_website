@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240">
+  <rect width="400" height="240" fill="#f6f7f9"/>
+  <path d="M20 90 L120 90 L160 60 L280 60 L320 90 L380 90 L380 150 L320 150 L280 180 L160 180 L120 150 L20 150 Z"
+        fill="#dde3ea" stroke="#1d4e89" stroke-width="1.5"/>
+  <g stroke="#e4572e" stroke-width="1">
+    <line x1="40" y1="105" x2="70" y2="105"/>
+    <line x1="40" y1="120" x2="80" y2="120"/>
+    <line x1="40" y1="135" x2="70" y2="135"/>
+  </g>
+  <rect x="185" y="105" width="30" height="30" fill="#fff" stroke="#1d4e89" stroke-width="1.5"/>
+  <text x="130" y="45" font-family="monospace" font-size="10" fill="#5b6b7a">test section</text>
+</svg>

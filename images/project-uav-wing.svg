@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240">
+  <rect width="400" height="240" fill="#f6f7f9"/>
+  <g stroke="#dde3ea" stroke-width="1">
+    <line x1="0" y1="60" x2="400" y2="60"/>
+    <line x1="0" y1="180" x2="400" y2="180"/>
+    <line x1="100" y1="0" x2="100" y2="240"/>
+    <line x1="300" y1="0" x2="300" y2="240"/>
+  </g>
+  <path d="M40 120 C120 90 280 90 360 120 C280 150 120 150 40 120 Z" fill="#dde3ea" stroke="#1d4e89" stroke-width="1.5"/>
+  <line x1="60" y1="120" x2="340" y2="120" stroke="#e4572e" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="170" y="115" font-family="monospace" font-size="10" fill="#5b6b7a">chord line</text>
+</svg>

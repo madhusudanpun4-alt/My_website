@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240">
+  <rect width="400" height="240" fill="#f6f7f9"/>
+  <g stroke="#dde3ea" stroke-width="1">
+    <line x1="0" y1="120" x2="400" y2="120"/>
+    <line x1="200" y1="0" x2="200" y2="240"/>
+  </g>
+  <rect x="160" y="90" width="80" height="60" fill="#dde3ea" stroke="#1d4e89" stroke-width="1.5"/>
+  <rect x="60" y="105" width="90" height="30" fill="none" stroke="#1d4e89" stroke-width="1.5"/>
+  <rect x="250" y="105" width="90" height="30" fill="none" stroke="#1d4e89" stroke-width="1.5"/>
+  <line x1="150" y1="120" x2="160" y2="120" stroke="#1d4e89" stroke-width="1.5"/>
+  <line x1="240" y1="120" x2="250" y2="120" stroke="#1d4e89" stroke-width="1.5"/>
+  <circle cx="200" cy="120" r="3" fill="#e4572e"/>
+  <text x="150" y="80" font-family="monospace" font-size="10" fill="#5b6b7a">solar array / bus / solar array</text>
+</svg>

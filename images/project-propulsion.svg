@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240">
+  <rect width="400" height="240" fill="#f6f7f9"/>
+  <g stroke="#dde3ea" stroke-width="1">
+    <line x1="0" y1="60" x2="400" y2="60"/>
+    <line x1="0" y1="180" x2="400" y2="180"/>
+  </g>
+  <path d="M140 40 L260 40 L260 120 L320 200 L80 200 L140 120 Z" fill="#dde3ea" stroke="#1d4e89" stroke-width="1.5"/>
+  <line x1="140" y1="40" x2="140" y2="120" stroke="#1d4e89" stroke-width="1"/>
+  <line x1="260" y1="40" x2="260" y2="120" stroke="#1d4e89" stroke-width="1"/>
+  <path d="M100 200 L90 225 M200 200 L200 228 M300 200 L310 225" stroke="#e4572e" stroke-width="1.5"/>
+  <text x="150" y="30" font-family="monospace" font-size="10" fill="#5b6b7a">combustion chamber</text>
+</svg>
