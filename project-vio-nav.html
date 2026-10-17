@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hybrid Visual Navigation for Autonomous UAVs — Madhusudan Pun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand">Madhusudan Pun <span>/</span> Aerospace</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section style="padding-top:3rem">
+    <div class="wrap" style="max-width:760px">
+
+      <a href="projects.html" class="mono" style="font-size:0.82rem; color:var(--text-dim)">&larr; Back to projects</a>
+
+      <p class="section-label" style="margin-top:1.6rem">Technical project &middot; 2025 – 2026</p>
+      <h1 style="font-size:2rem; max-width:20ch">Hybrid Visual Navigation for Autonomous UAVs</h1>
+
+      <div class="tag-row" style="margin:1.2rem 0 2rem">
+        <span class="tag">ROS</span>
+        <span class="tag">Gazebo</span>
+        <span class="tag">Python</span>
+        <span class="tag">IMU</span>
+        <span class="tag">Stereo Vision</span>
+      </div>
+
+      <img src="images/project-vio-nav.svg" alt="Diagram of a UAV visual-inertial navigation pipeline"
+           style="width:100%; border-radius:6px; border:1px solid var(--border); margin-bottom:2.5rem" />
+
+      <h2 style="font-size:1.3rem">Overview</h2>
+      <p style="color:var(--text-muted)">
+        GPS signals disappear indoors, near tall structures, and in other cluttered environments —
+        exactly where small UAVs are often most useful. This project built a Visual-Inertial
+        Odometry (VIO) platform that lets a UAV estimate its own position and orientation without
+        GPS, by tightly coupling data from an IMU (accelerometer + gyroscope) with a stereo camera
+        pair.
+      </p>
+
+      <h2 style="font-size:1.3rem; margin-top:2rem">Approach</h2>
+      <ul style="color:var(--text-muted); padding-left:1.2rem; line-height:1.8">
+        <li>Implemented state estimation through tight coupling of IMU and stereo-camera data, rather than treating each sensor independently.</li>
+        <li>Fused accelerometer, gyroscope, and visual feature data to achieve robust 6-DOF (six degrees of freedom) pose estimation in obstacle-dense environments.</li>
+        <li>Built a scalable simulation framework in ROS and Gazebo to validate navigation algorithms in high-fidelity virtual flight environments before any hardware deployment.</li>
+        <li>Defined localization accuracy and obstacle-avoidance success metrics, and validated performance against ground-truth trajectories inside the simulation environment.</li>
+        <li>Coordinated software, sensing, and testing workflows across a multidisciplinary team, maintaining documentation of algorithm iterations and test results throughout.</li>
+      </ul>
+
+      <h2 style="font-size:1.3rem; margin-top:2rem">Role</h2>
+      <p style="color:var(--text-muted)">
+        Led development of the VIO platform end-to-end — from algorithm design through
+        simulation validation — while coordinating with teammates working on sensing hardware
+        and testing infrastructure.
+      </p>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 Madhusudan Pun</span>
+      <span class="mono">madhusudanpun4@gmail.com</span>
+    </div>
+  </footer>
+
+</body>
+</html>

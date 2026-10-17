@@ -14,7 +14,7 @@
     <div class="wrap">
       <a href="index.html" class="brand">Madhusudan Pun <span>/</span> Aerospace</a>
       <nav class="site-nav">
-        <a href="index.html">Home</a>
+        <a href="index000.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html" class="active">Projects</a>
         <a href="skills.html">Skills</a>
@@ -28,73 +28,76 @@
       <p class="section-label">Selected projects</p>
       <h1 style="font-size:2rem">Projects</h1>
 
-      <!-- Each project is one "card" — copy this whole <div class="card project-card">
-           block to add a new project. -->
+      <!-- Each project is one "card" — the WHOLE card is wrapped in an <a> tag
+           now, linking to that project's own page. Copy this whole block
+           to add a new project once you've made its page. -->
       <div class="grid-2" style="margin-top:2rem">
 
-        <div class="card project-card" style="padding:0">
-          <img src="images/project-uav-wing.svg" alt="Schematic of a UAV wing cross-section" />
+        <a class="card project-card" style="padding:0; display:block" href="project-vio-nav.html">
+          <img src="images/project-vio-nav.svg" alt="Diagram of a UAV visual-inertial navigation pipeline" />
           <div class="card-body">
-            <h3 style="font-size:1.1rem">Low-Reynolds UAV Wing Optimization</h3>
+            <h3 style="font-size:1.1rem">Hybrid Visual Navigation for Autonomous UAVs</h3>
             <p style="color:var(--text-muted); font-size:0.92rem">
-              CFD sweep across airfoil camber and thickness for a fixed-wing UAV
-              operating below Re 500,000, reducing cruise drag by 11%.
+              Led development of a Visual-Inertial Odometry (VIO) platform for GPS-denied
+              navigation, tightly coupling IMU and stereo-camera data for 6-DOF pose estimation.
             </p>
             <div class="tag-row">
-              <span class="tag">CFD</span>
-              <span class="tag">XFOIL</span>
+              <span class="tag">ROS</span>
+              <span class="tag">Gazebo</span>
               <span class="tag">Python</span>
+              <span class="tag">Stereo Vision</span>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="card project-card" style="padding:0">
-          <img src="images/project-propulsion.svg" alt="Schematic of a rocket engine combustion chamber" />
+        <a class="card project-card" style="padding:0; display: block" href="project-indrajal.html">
+          <img src="images/project-stol-aircraft.svg" alt="Schematic of a STOL firefighting aircraft" />
           <div class="card-body">
-            <h3 style="font-size:1.1rem">Bi-Propellant Static Fire Test Stand</h3>
+            <h3 style="font-size:1.1rem">Indrajal STOL Firefighting Aircraft Design</h3>
             <p style="color:var(--text-muted); font-size:0.92rem">
-              Instrumentation and data reduction for a 500N test stand,
-              validating predicted specific impulse within 3%.
+              Led conceptual design of a 3,500 kg STOL firefighting aircraft. Conducted longitudinal
+              and lateral-directional stability analysis in XFLR5, and validated control surface
+              effectiveness through flight simulation in X-Plane.
+            </p>
+            <div class="tag-row">
+              <span class="tag">XFLR5</span>
+              <span class="tag">X-Plane</span>
+              <span class="tag">Stability Analysis</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card project-card" style="padding:0; display: block" href="project-vortex-generator.html">
+          <img src="images/Internship/PIV_Setup.jpeg" alt="PIV experimental setup with laser sheet and water channel" />
+          <div class="card-body">
+            <h3 style="font-size:1.1rem">Vortex Ring Generator: PIV Study</h3>
+            <p style="color:var(--text-muted); font-size:0.92rem">
+              Research internship at IISc Bangalore. Generated and quantified vortex rings using
+              PIV, as technical support for a study on jellyfish-inspired propulsion.
             </p>
             <div class="tag-row">
               <span class="tag">MATLAB</span>
-              <span class="tag">DAQ</span>
-              <span class="tag">Propulsion</span>
+              <span class="tag">PIVlab</span>
+              <span class="tag">PIV</span>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="card project-card" style="padding:0">
-          <img src="images/project-satellite.svg" alt="Schematic of a satellite bus and solar arrays" />
+        <a class="card project-card" style="padding:0; display: block" href="project-dbf.html">
+          <img src="images/project-uav-wing.svg" alt="Schematic of a competition fixed-wing aircraft" />
           <div class="card-body">
-            <h3 style="font-size:1.1rem">CubeSat Structural Qualification</h3>
+            <h3 style="font-size:1.1rem">AIAA Design Build Fly Competition</h3>
             <p style="color:var(--text-muted); font-size:0.92rem">
-              Vibration and thermal-vacuum test planning for a 3U CubeSat
-              structure, ahead of a university launch manifest.
+              Collaborated with a multidisciplinary design team to deliver aircraft design solutions
+              under competition constraints, contributing aerodynamic analysis and technical
+              documentation.
             </p>
             <div class="tag-row">
-              <span class="tag">FEA</span>
-              <span class="tag">ANSYS</span>
-              <span class="tag">SolidWorks</span>
+              <span class="tag">Aerodynamics</span>
+              <span class="tag">Design Team</span>
             </div>
           </div>
-        </div>
-
-        <div class="card project-card" style="padding:0">
-          <img src="images/project-windtunnel.svg" alt="Schematic of a wind tunnel test section" />
-          <div class="card-body">
-            <h3 style="font-size:1.1rem">Subsonic Wind Tunnel Instrumentation</h3>
-            <p style="color:var(--text-muted); font-size:0.92rem">
-              Built a load-cell and pressure-tap data pipeline for a university
-              subsonic tunnel, cutting test setup time in half.
-            </p>
-            <div class="tag-row">
-              <span class="tag">C++</span>
-              <span class="tag">Sensors</span>
-              <span class="tag">Testing</span>
-            </div>
-          </div>
-        </div>
+        </a>
 
       </div>
     </div>

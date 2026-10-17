@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vortex Ring Generator — PIV Study — Madhusudan Pun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand">Madhusudan Pun <span>/</span> Aerospace</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section style="padding-top:3rem">
+    <div class="wrap" style="max-width:760px">
+
+      <a href="projects.html" class="mono" style="font-size:0.82rem; color:var(--text-dim)">&larr; Back to projects</a>
+
+      <p class="section-label" style="margin-top:1.6rem">Research internship &middot; Indian Institute of Science, 2025</p>
+      <h1 style="font-size:2rem; max-width:24ch">Vortex Ring Generator: A PIV Study of Bio-Inspired Propulsion</h1>
+
+      <div class="tag-row" style="margin:1.2rem 0 2rem">
+        <span class="tag">MATLAB</span>
+        <span class="tag">PIVlab</span>
+        <span class="tag">PIV</span>
+        <span class="tag">Fluid Mechanics</span>
+      </div>
+
+      <img src="images/Internship/PIV_Setup.jpeg" alt="Schematic of a PIV flow visualization setup"
+           style="width:100%; border-radius:6px; border:1px solid var(--border); margin-bottom:2.5rem" />
+
+      <h2 style="font-size:1.3rem">Overview</h2>
+      <p style="color:var(--text-muted)">
+        Completed during a one-month research internship at the Indian Institute of Science
+        (IISc), Bangalore, under Prof. Dr. Raghuraman N. Govardhan (Department of Mechanical
+        Engineering), alongside co-intern Amogh Adhikari. Vortex rings are the same flow structure
+        found in starting jets, volcanic eruptions, and the propulsive pulses of jellyfish and
+        squid. This project used Particle Image Velocimetry (PIV) to generate and quantify vortex
+        rings in a water channel, as technical support for a broader study on jellyfish-inspired
+        propulsion.
+      </p>
+
+      <h2 style="font-size:1.3rem; margin-top:2rem">Background</h2>
+      <p style="color:var(--text-muted)">
+        A vortex ring forms when a piston pushes a column of fluid through a nozzle — the boundary
+        layer separates at the exit and rolls up into a ring. How much fluid a single pulse can
+        pack into that ring is governed by the <em>formation number</em>, a non-dimensional stroke
+        ratio (L/D) that Gharib et al. showed sits between 3.6–4.5 across a wide range of
+        conditions. Beyond that point, any additional fluid trails off as a separate jet instead
+        of joining the ring — directly linking the formation number to the propulsive efficiency
+        of a pulsed jet.
+      </p>
+
+      <h2 style="font-size:1.3rem; margin-top:2rem">PIV setup and method</h2>
+      <ul style="color:var(--text-muted); padding-left:1.2rem; line-height:1.8">
+        <li>Set up a water channel driven by a piston-cylinder actuator, with a Programmable Logic Controller (PLC) timing the actuator stroke and water pump.</li>
+        <li>Seeded the flow and illuminated it with a continuous 532 nm green laser sheet.</li>
+        <li>Captured double-frame images at 100 fps (10 ms temporal resolution) using a high-speed/CCD camera, calibrated to 0.229 mm/pixel.</li>
+        <li>Cross-correlated successive frames in PIVlab (MATLAB) to extract 2D velocity vector fields and vorticity.</li>
+      </ul>
+
+      <h2 style="font-size:1.3rem; margin-top:2rem">Results</h2>
+      <p style="color:var(--text-muted)">
+        The processed PIV data clearly visualized a vortex street wake: paired streamlines
+        converging on two counter-rotating vortex cores, one clockwise and one counter-clockwise,
+        consistent with the dipole structure expected from an oscillating source.
+      </p>
+      <ul style="color:var(--text-muted); padding-left:1.2rem; line-height:1.8">
+        <li>The velocity profile along a horizontal measurement line showed two distinct peaks — one per vortex core — with an integrated momentum flux of 6.6592 &times; 10<sup>-8</sup> m/s&middot;m.</li>
+        <li>The corresponding vorticity profile peaked at roughly +0.44 s<sup>-1</sup> and -0.30 s<sup>-1</sup>, with a net positive integral of 2.6243 &times; 10<sup>-5</sup> s<sup>-1</sup>&middot;m — confirming counter-clockwise vorticity dominated along the sampled line.</li>
+      </ul>
+
+      <h2 style="font-size:1.3rem; margin-top:2rem">Role</h2>
+      <p style="color:var(--text-muted)">
+        Assisted in the PIV setup for the jellyfish-inspired propulsion study, and processed the
+        resulting flow-field data in PIVlab to quantify vortex shedding and thrust-relevant
+        characteristics — worked under the mentorship of Mr. Ashok Balla on the PIV methodology
+        itself.
+      </p>
+
+      <a href="images/Internship/Internship_Report(AM).pdf" target="_blank" class="card report-card">
+  <span class="report-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/>
+            <path d="M14 2v6h6"/>
+          </svg>
+        </span>
+        <span class="report-card__text">
+          <span class="report-card__title">Full internship report</span>
+          <span class="report-card__meta mono">PDF &middot; IISc Bangalore &middot; 2025</span>
+        </span>
+        <span class="report-card__action mono">Read &rarr;</span>
+</a>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 Madhusudan Pun</span>
+      <span class="mono">madhusudanpun4@gmail.com</span>
+    </div>
+  </footer>
+
+</body>
+</html>

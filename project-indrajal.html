@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Indrajal STOL Firefighting Aircraft Design — Madhusudan Pun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand">Madhusudan Pun <span>/</span> Aerospace</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section style="padding-top:3rem">
+    <div class="wrap" style="max-width:760px">
+
+      <a href="projects.html" class="mono" style="font-size:0.82rem; color:var(--text-dim)">&larr; Back to projects</a>
+
+      <p class="section-label" style="margin-top:1.6rem">Technical project &middot; 2025</p>
+      <h1 style="font-size:2rem; max-width:22ch">Indrajal STOL Firefighting Aircraft Design</h1>
+
+      <div class="tag-row" style="margin:1.2rem 0 2rem">
+        <span class="tag">XFLR5</span>
+        <span class="tag">X-Plane</span>
+        <span class="tag">Stability Analysis</span>
+        <span class="tag">Conceptual Design</span>
+      </div>
+
+      <img src="images/project-stol-aircraft.svg" alt="Schematic of a STOL firefighting aircraft"
+           style="width:100%; border-radius:6px; border:1px solid var(--border); margin-bottom:2.5rem" />
+
+      <h2 style="font-size:1.3rem">Overview</h2>
+      <p style="color:var(--text-muted)">
+        Indrajal is a twin-engine STOL (Short Take-Off and Landing) utility aircraft, designed
+        to assist in controlling and suppressing wildfires by delivering water or retardant
+        directly onto burning areas. It carries a two-person crew — pilot and co-pilot — and
+        uses a pressurized, belly-mounted drop system with compressed air to push water or
+        retardant through the nozzles, allowing operation across diverse altitudes and
+        challenging terrain.
+      </p>
+
+      <h2 style="font-size:1.3rem; margin-top:2rem">Mission &amp; Design Requirements</h2>
+      <p style="color:var(--text-muted)">
+        The mission profile covers take-off, climb, cruise to the fire zone, a retardant drop,
+        and return to base — with the aircraft required to operate from short or rough
+        airstrips close to active fire zones. Key design requirements included:
+      </p>
+      <ul style="color:var(--text-muted); padding-left:1.2rem; line-height:1.8">
+        <li>STOL performance with a cruise ceiling of 4,800 m</li>
+        <li>Cruise speed of 75 m/s</li>
+        <li>Two-crew configuration (pilot and co-pilot)</li>
+        <li>Reliable handling across varied altitude and loading conditions</li>
+      </ul>
+
+      <h2 style="font-size:1.3rem; margin-top:2rem">Aircraft Specification</h2>
+      <p style="color:var(--text-muted)">
+        The final configuration is a high-wing, twin-engine design (2 &times; 650 hp) with an
+        8,400 kg MTOW, 3,600 kg empty weight, and a 3,500 kg payload capacity for water or
+        retardant. It has a 500 km range and 2-hour endurance, a 20 m wingspan (NACA 2412
+        airfoil, aspect ratio 7.81), and NACA 0008 horizontal and vertical stabilizers.
+        Take-off distance came out to 426 m and landing distance to 518 m — comfortably within
+        STOL territory for operating near fire zones.
+      </p>
+
+      <h2 style="font-size:1.3rem; margin-top:2rem">Loading &amp; Drop System</h2>
+      <ul style="color:var(--text-muted); padding-left:1.2rem; line-height:1.8">
+        <li>Water fill rate of approximately 1,135 liters per minute</li>
+        <li>63.5 mm hose diameter Fire Retardant Drop System (FRDS Gen II)</li>
+        <li>Maximum drop of 3,500 liters in 20 seconds</li>
+        <li>Garmin G1000 NXi integrated glass cockpit</li>
+      </ul>
+
+      <h2 style="font-size:1.3rem; margin-top:2rem">Approach</h2>
+      <ul style="color:var(--text-muted); padding-left:1.2rem; line-height:1.8">
+        <li>Led the conceptual design of the aircraft from mission requirements through to a defined configuration, including a matching plot to size wing loading and power loading against the design point.</li>
+        <li>Conducted longitudinal and lateral-directional stability analyses in XFLR5 — including static stability (C<sub>m</sub> vs. &alpha;, lift curve, lift-to-drag ratio), neutral point determination, and CG travel diagram against forward/aft limits — to ensure the design met mission-compliant flight characteristics.</li>
+        <li>Evaluated dynamic stability modes (short period, phugoid, spiral, and rudder doublet response) at MTOW to confirm acceptable damping and handling qualities.</li>
+        <li>Derived the flight and gust envelope (V-n diagram) to define structural load limits across the stall-to-cruise speed range.</li>
+        <li>Ran flight simulations in X-Plane to evaluate control surface effectiveness and dynamic response under a range of loading scenarios, including a handling quality (bank angle) test rated on the Cooper-Harper scale.</li>
+        <li>Characterized stall behavior (altitude vs. stall speed) and climb/descent performance via ROC and ROD hodographs.</li>
+      </ul>
+
+      <h2 style="font-size:1.3rem; margin-top:2rem">Results</h2>
+      <p style="color:var(--text-muted)">
+        Indrajal completed its flight tests, demonstrating dependable stability and control
+        with the ability to operate from short or rough runways. Handling qualities were rated
+        a <strong>3 on the Cooper-Harper scale</strong> — mild, unpleasant deficiencies with only
+        minimal pilot compensation required to achieve desired performance. Max climb angle
+        reached <strong>8.3&deg;</strong> (ROC<sub>max</sub> = 19 ft/s), with a minimum descent
+        angle of <strong>-3.46&deg;</strong>. With its 500 km range, 2-hour endurance, and
+        3,500-liter payload capacity, the aircraft is well-suited for quick, effective wildfire
+        response.
+      </p>
+
+      <h2 style="font-size:1.3rem; margin-top:2rem">Role</h2>
+      <p style="color:var(--text-muted)">
+        Led the conceptual design effort as part of a four-person team, working across sizing,
+        stability analysis, and simulation-based validation of control response to translate
+        mission constraints into a quantitative, flight-tested design.
+      </p>
+
+      <h2 style="font-size:1.3rem; margin-top:2rem">Poster Presentation</h2>
+      <p style="color:var(--text-muted)">
+        This project was presented as a research poster at IOE Pulchowk Campus,
+        Department of Mechanical &amp; Aerospace Engineering. Click either page to
+        view it at full resolution, or
+        <a href="images/Indrajal/indrajal-poster.pdf" target="_blank" rel="noopener">download the full PDF</a>.
+      </p>
+      <p style="color:var(--text-muted); font-size:0.9rem">
+        Team: Aarya Risal, Madhusudan Pun, Prakash Poudel, Nayana Khusu
+      </p>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1.2rem">
+        <a href="images/Indrajal/indrajal-poster-1-full.jpg" target="_blank" rel="noopener">
+          <img src="images/Indrajal/indrajal-poster-1-thumb.jpg" alt="Indrajal poster page 1 — mission profile, aircraft specifications, and aircraft layout"
+               style="width:100%; border-radius:6px; border:1px solid var(--border); cursor:zoom-in" />
+        </a>
+        <a href="images/Indrajal/indrajal-poster-2-full.jpg" target="_blank" rel="noopener">
+          <img src="images/Indrajal/indrajal-poster-2-thumb.jpg" alt="Indrajal poster page 2 — dynamic stability, CG envelope, and conclusion"
+               style="width:100%; border-radius:6px; border:1px solid var(--border); cursor:zoom-in" />
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 Madhusudan Pun</span>
+      <span class="mono">madhusudanpun4@gmail.com</span>
+    </div>
+  </footer>
+
+</body>
+</html>
